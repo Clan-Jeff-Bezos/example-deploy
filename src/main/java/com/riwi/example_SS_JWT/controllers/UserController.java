@@ -20,6 +20,7 @@ import java.util.List;
 @RequestMapping("user")
 @AllArgsConstructor
 @Tag(name = "User", description = "Manages user-related requests.")
+@CrossOrigin("*")
 public class UserController {
 
     @Autowired

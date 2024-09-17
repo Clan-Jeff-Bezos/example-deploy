@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("auth")
 @AllArgsConstructor
 @Tag(name = "Authentication", description = "Manages authentication requests.")
+@CrossOrigin("*")
 public class AuthController {
     @Autowired
     private final IAuthService authService;
